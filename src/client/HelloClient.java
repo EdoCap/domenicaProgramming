@@ -20,7 +20,6 @@ public class HelloClient {
 				System.out.println(remote.sayHelloTo("Pietro"));
 			}
 
-
 		}catch (Exception e){
 			e.printStackTrace();
 			return;
