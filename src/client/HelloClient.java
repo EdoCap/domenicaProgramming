@@ -11,24 +11,23 @@ import java.util.Locale;
  * Created by Edoardo on 09/04/17.
  */
 public class HelloClient {
-
-	public static void main(String[] args){
+	public HelloClient(String obj){
 		try {
 			Registry registry = LocateRegistry.getRegistry();
-			Hellable remote = (Hellable) registry.lookup("sharello");
+			Hellable remote = (Hellable) registry.lookup(obj);
 			for (int i = 0; i < 10; i++) {
 				System.out.println(remote.sayHelloTo("Pietro"));
+				remote.aspettaTurno();
 			}
-
-
 		}catch (Exception e){
 			e.printStackTrace();
 			return;
 		}
+	}
 
+	public static void main(String[] args){
 
-
-
+		new HelloClient("sharello");
 	}
 
 }
