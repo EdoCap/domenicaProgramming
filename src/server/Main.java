@@ -6,6 +6,8 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.Scanner;
 
+
+//main del server
 public class Main {
 
 	public static void main(String[] args) {

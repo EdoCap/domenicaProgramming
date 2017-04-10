@@ -6,7 +6,7 @@ import shared.Consumer;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
-
+//main del client
 public class ClientMain {
 
 
