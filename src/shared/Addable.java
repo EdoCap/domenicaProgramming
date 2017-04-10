@@ -8,5 +8,5 @@ import java.rmi.RemoteException;
  */
 public interface Addable extends Remote {
 
-	public void add() throws RemoteException, InterruptedException;
+	void add() throws RemoteException, InterruptedException;
 }
